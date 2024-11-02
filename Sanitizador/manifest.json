@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Purgar Forocoches",
+  "version": "1.0",
+  "description": "Elimina temas iniciados por los usuarios de tu lista de ignorados en Forocoches. --Compatible con Tema Antiguo--",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://forocoches.com/foro/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://forocoches.com/foro/forumdisplay.php*"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://forocoches.com/foro/profile.php?do=ignorelist"],
+      "js": ["fetch_ignorelist.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purgar Forocoches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 250px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    #hidden-threads-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    #hidden-threads-list li {
+      margin: 5px 0;
+      padding: 5px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+    }
+    #hidden-threads-list a {
+      text-decoration: none;
+      color: #0073e6;
+    }
+    #hidden-threads-list a:hover {
+      text-decoration: underline;
+    }
+    #minimize-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3>Hilos Ocultos</h3>
+    <button id="minimize-button">\u2500</button>
+  </div>
+  <div id="total-hidden-count" style="display: none;">Total de hilos ocultos: 0</div>
+  <ul id="hidden-threads-list"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
