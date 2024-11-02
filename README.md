@@ -31,5 +31,4 @@
 ## Contribución
 Si deseas contribuir a esta extensión, puedes hacer un fork del repositorio, realizar mejoras y enviar un pull request.
 
-## Créditos
-Icono diseñado por el creador del plugin.
+
